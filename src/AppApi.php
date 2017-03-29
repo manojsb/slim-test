@@ -6,7 +6,7 @@ use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
 
-class App
+class AppApi
 {
     /**
      * Stores an instance of the Slim application.
@@ -50,6 +50,7 @@ class App
             });
         });
 
+        $this->app = $app;
     }
 
     /**
