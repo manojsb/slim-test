@@ -14,7 +14,7 @@ class AppTest extends Testcase
 
     public function setUp()
     {
-        $this->app = (new API\App())->get();
+        $this->app = (new API\AppApi())->get();
     }
 
     public function testTodoGet()
